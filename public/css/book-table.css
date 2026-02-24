@@ -1,0 +1,151 @@
+html, body {
+    height: 100%;
+    overflow: hidden; /* يمنع التمرير العمودي */
+}
+
+.booking-container {
+    max-width: 173vh;
+    margin: 0 auto;
+    padding: 10px;
+    border: 3px solid #e6aa55;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.booking-container h1 {
+    color: #333;
+}
+
+.booking-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.booking-container input {
+    padding: 5px;
+    width: 90%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.location-selection {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.location-selection button {
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    border-radius: 10px;
+    border: none;
+}
+
+.location-selection img {
+    display: block;
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+
+}
+.location-selection img:hover {
+    transition: transform 0.5s ease;
+    transform: scale(1.1);
+}
+
+.location-selection button:hover .hover-text {
+    opacity: 1;
+
+}
+
+.location-selection .hover-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.815);
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px 0;
+    opacity: 0;
+    transition: opacity 1s ease;
+    box-sizing: border-box;
+}
+
+.submit-btn {
+    display: inline-block;
+    position: relative;
+    padding: 15px 45px;
+    background: #e6aa55;
+    font-size: 17px;
+    font-weight: 900;
+    color: #181818;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    border-bottom: 3px solid #181818;
+    transition: all 0.3s ease-in-out;
+}
+
+.submit-btn:hover {
+    padding: 15px 25px;
+    border-radius: 8px 8px 24px 24px;
+    animation: floatHover 1s ease-in-out infinite;
+}
+
+@keyframes floatHover {
+    0%, 100% {
+        transform: translateY(0) translateX(0);
+    }
+    50% {
+        transform: translateY(7px) translateX(1px);
+    }
+}
+
+
+.title {
+    background-color: #e6aa55;
+    padding: 10px 10px;
+    font-size: large;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.title h1 {
+    margin: 0;
+    padding: 2px 0;
+}
+.form-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 70%;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.form-group div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.form-group input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 150px; 
+}
+

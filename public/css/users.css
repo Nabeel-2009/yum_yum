@@ -1,0 +1,32 @@
+.users-container {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.users-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #333;
+}
+
+.users-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.users-table th, 
+.users-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.users-table th {
+    background-color: #f4f4f4;
+}
+
+.users-table tr:nth-child(even) {
+    background-color: #fafafa;
+}

@@ -1,0 +1,32 @@
+.admins-container {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.admins-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #333;
+}
+
+.admins-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.admins-table th, 
+.admins-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.admins-table th {
+    background-color: #f4f4f4;
+}
+
+.admins-table tr:nth-child(even) {
+    background-color: #fafafa;
+}

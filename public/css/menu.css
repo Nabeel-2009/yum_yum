@@ -1,0 +1,93 @@
+
+  .section h2 {
+    margin-top: 0;
+    text-align: center;
+    color: #333;
+  }
+  
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    margin-top: 20px;
+  }
+  
+  .card {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin-bottom: 10%;
+    overflow: hidden;
+    border-radius: 8px;
+    perspective: 1000px;
+  }
+  
+  .container {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .product-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: filter 0.5s ease, transform 0.5s ease;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    font-weight: bold;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: background 0.5s ease;
+    pointer-events: none;
+  }
+  
+  .overlay-text,
+  .overlay-price {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    margin-bottom: 30px;
+    text-align: center; 
+  }
+  
+  .card:hover .product-img {
+    filter: blur(4px);
+    transform: scale(1.05);
+  }
+  
+  .card:hover .overlay {
+    background: rgba(0, 0, 0, 0.549);
+  }
+  
+  .card:hover .overlay-text,
+  .card:hover .overlay-price {
+    opacity: 1;
+  }
+  
+  .overlay-text h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .overlay-price p {
+    margin: 0;
+    font-size: 20px;
+  }
+  
+
+  .page-title{
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+  }

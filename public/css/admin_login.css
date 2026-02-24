@@ -1,0 +1,118 @@
+/* Base Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  /* Container */
+  .login-container {
+    width: 350px;
+    background: #fff;
+    padding: 20px;
+    border: 3px solid #e6aa55;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  /* Title */
+  .title {
+    background-color: #e6aa55;
+    padding: 10px;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .title h1 {
+    margin: 0;
+  }
+  
+  /* Form Group */
+  .input-group {
+    margin-bottom: 15px;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border 0.3s ease;
+  }
+  
+  .input-group input::placeholder {
+    color: #999;
+  }
+  
+  .input-group input:focus {
+    outline: none;
+    border-color: #e6aa55;
+  }
+  
+  /* Button */
+  .login-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #e6aa55;
+    color: #181818;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 15px;
+  }
+  
+  .login-btn:hover {
+    background-color: #d48b40;
+  }
+  
+  /* Extra Link */
+  .extra-link {
+    display: block;
+    margin-top: 15px;
+    color: #e6aa55;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .extra-link:hover {
+    color: #d48b40;
+  }
+  
+  /* Error Message */
+  .error-box {
+    background-color: #ffdddd;
+    color: red;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid red;
+    border-radius: 5px;
+    text-align: left;
+  }
+  
+  .error-box ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .error-text {
+    font-weight: bold;
+  }
+  
